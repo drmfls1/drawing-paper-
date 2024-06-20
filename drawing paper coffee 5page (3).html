@@ -1,0 +1,174 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap"/>
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                body {
+                    width: 100%;
+                    height: auto;
+                }
+                
+                #container {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    color: #D6C9BA;
+                }
+                #left {
+                    width: 50%;
+                    height: 100%;
+                    background: url(./31.png);
+                    background-size: cover;
+                }
+                #right {
+                    width: 50%;
+                    height: 100%;
+                    background: url(./32.png);
+                    background-size: cover;
+                }
+                .gr {
+                    text-align: center;
+                    font-size: 48px;
+                    margin-top: 180;
+                }
+                #glza {
+                    text-align: left;
+                    font-size: 26px;
+                    margin-top: 108;
+                    margin-left: 260;
+                    font-family: 'Pretendard', sans-serif;
+                }
+                #grzate {
+                    text-align: left;
+                    font-size: 24px;
+                    margin-top: 87;
+                    margin-left: 260;
+                    font-family: 'Pretendard', sans-serif;
+                }
+                .box {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                }
+                .box > div {
+                    width: 200px;
+                    height: 300px;
+                    font-family: 'Pretendard', sans-serif;
+                    font-size: 30px;
+                    color: #D6C9BA;
+                }
+                .skip {
+                    display: inline;
+                    position: absolute;
+                    font-size: 48px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    font-family: 'Pretendard', sans-serif;
+                    bottom: 50px;
+                    right: 50px;
+                }
+                a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
+#congrats {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 64px;
+                color: white;
+                z-index: 9999;
+                opacity: 1;
+                transition: opacity 1s ease-in-out;
+            }
+
+            #congrats.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+    
+            </style>
+        </head>
+        <body>
+            <div id="congrats">축하합니다!!</div>
+            <div id="container">
+                <div id="left">
+                    <div class="gr">밀레의 숨은 레시피</div>
+                    <div id="glza">
+                        1. 블랜더 안에 얼음을 빈컵에 한가득 넣어줍니다.<br><br>
+                        2. 블랜더기에 우유를 200g 넣어줍니다.<br><br>
+                        3. 블랜더기 안에 초콜릿 시럽을 두번 넣어줍니다.<br><br>
+                        4. 초코 파우더도 3번 반 넣어줍니다.<br><br>
+                        5. 블랜더기를 돌린 후 컵 안에 담아줍니다.<br><br>
+                        6. 위쪽에 휘핑을 올린 후 녹차 파우더를 3번 뿌려줍니다.
+                    </div>
+                    <div id="grzate">
+                        그랑자트 : 이 음료를 찾아 낸 당신에게 주는 선물은 내 레시피입니다.
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="gr">밀레의 재료</div>
+                    <div class="box">
+                        <div>
+                            <div style="background: url(./cohorret1.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">1. 초코 시럽</div>
+                        </div>
+                        <div>
+                            <div style="background: url(./ice2.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">2. 얼음</div>
+                        </div>
+                        <div>
+                            <div style="background: url(./mlik1.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">3. 우유</div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <div style="background: url(./hipiing.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">4. 휘핑크림</div>
+                        </div>
+                        <div>
+                            <div style="background: url(./noccha2.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">5. 녹차 파우더</div>
+                        </div>
+                        <div>
+                            <div style="background: url(./cochorret.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="text-align: center; margin-top: 40px;">6. 초콜릿 파우더</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./drawing paper coffee 4page.html#dee"><div class="skip">next</div></a>
+                <script>
+                    window.onload = function() {
+                        setTimeout(function() {
+                            document.getElementById('congrats').classList.add('hidden');
+                            document.getElementById('container').style.opacity = '1';
+                        }, 500);
+                    };
+                </script>
+            </div>
+        </body>
+    </html>
