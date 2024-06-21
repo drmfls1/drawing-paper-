@@ -11,6 +11,7 @@
                 body {
                     width: 100%;
                     height: auto;
+                    min-width: 1600px;
                 }
                 
                 #container {
@@ -21,14 +22,16 @@
                 }
                 #left {
                     width: 50%;
+                    min-width: 800px;
                     height: 100%;
-                    background: url(./11.png);
+                    background: url(./img/11.png);
                     background-size: cover;
                 }
                 #right {
                     width: 50%;
+                    min-width: 800px;
                     height: 100%;
-                    background: url(./12.png);
+                    background: url(./img/12.png);
                     background-size: cover;
                 }
                 .gr {
@@ -37,17 +40,15 @@
                     margin-top: 180;
                 }
                 #glza {
-                    text-align: left;
+                    text-align: center;
                     font-size: 26px;
-                    margin-top: 108;
-                    margin-left: 260;
+                    margin-top: 108px;
                     font-family: 'Pretendard', sans-serif;
                 }
                 #grzate {
-                    text-align: left;
+                    text-align: center;
                     font-size: 24px;
-                    margin-top: 87;
-                    margin-left: 260;
+                    margin-top: 87px;
                     font-family: 'Pretendard', sans-serif;
                 }
                 .box {
@@ -104,12 +105,22 @@ a:active {
                 opacity: 1;
                 transition: opacity 1s ease-in-out;
             }
-
+            a {
+                text-decoration: none;
+            }
             #congrats.hidden {
                 opacity: 0;
                 pointer-events: none;
             }
             </style>
+                            <script>
+                                window.onload = function() {
+                                    setTimeout(function() {
+                                        document.getElementById('congrats').classList.add('hidden');
+                                        document.getElementById('container').style.opacity = '1';
+                                    }, 500);
+                                };
+                            </script>
         </head>
         <body>
             <div id="congrats">축하합니다!!</div>
@@ -132,25 +143,25 @@ a:active {
                     <div class="gr">고흐의 재료</div>
                     <div class="box">
                         <div>
-                            <div style="background: url(./podo.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="background: url(./img/podo.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
                             <div style="text-align: center; margin-top: 40px;">1. 포도 시럽</div>
                         </div>
                         <div>
-                            <div style="background: url(./ice.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="background: url(./img/ice.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
                             <div style="text-align: center; margin-top: 40px;">2. 얼음</div>
                         </div>
                         <div>
-                            <div style="background: url(./bubble.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="background: url(./img/bubble.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
                             <div style="text-align: center; margin-top: 40px;">3. 젤리</div>
                         </div>
                     </div>
                     <div class="box">
                         <div>
-                            <div style="background: url(./noccha.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="background: url(./img/noccha.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
                             <div style="text-align: center; margin-top: 40px;">4. 소다쥬스</div>
                         </div>
                         <div>
-                            <div style="background: url(./wusan.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
+                            <div style="background: url(./img/wusan.png); background-size: cover; width: 160; height: 160px; margin-left: 20px; margin-top: 40px;"></div>
                             <div style="text-align: center; margin-top: 40px;">5. 녹차 파우더</div>
                         </div>
                         <div>
@@ -159,15 +170,7 @@ a:active {
                         </div>
                     </div>
                 </div>
-                <a href="./drawing paper coffee 4page.html#bee"><div class="skip">next</div></a>
-                <script>
-                    window.onload = function() {
-                        setTimeout(function() {
-                            document.getElementById('congrats').classList.add('hidden');
-                            document.getElementById('container').style.opacity = '1';
-                        }, 500);
-                    };
-                </script>
+                <div class="skip"><a href="./drawing paper coffee 4page.html#bee">next</a></div>
             </div>
         </body>
     </html>
